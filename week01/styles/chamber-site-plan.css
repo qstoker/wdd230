@@ -1,0 +1,12 @@
+body {
+  /* font-family: "Mooli", sans-serif; */
+  font-family: "Roboto", sans-serif;
+  /* color: #5e7338 #455a2f #fffceb #5c8dcc #38659f; */
+  color: #455a2f #5e7338 #335f95 #517cb5 #df8b31;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Mooli", sans-serif;
+}
