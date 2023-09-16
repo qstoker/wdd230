@@ -1,12 +1,50 @@
 body {
-  /* font-family: "Mooli", sans-serif; */
   font-family: "Roboto", sans-serif;
-  /* color: #5e7338 #455a2f #fffceb #5c8dcc #38659f; */
-  color: #455a2f #5e7338 #335f95 #517cb5 #df8b31;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+  color: #161616;
+}
+
+section {
+  border: 1px solid #335f95;
+  margin: 2rem 0 2rem 0;
 }
 
 h1,
-h2,
+h2 {
+  padding: 1rem;
+  margin: 0;
+  font-family: "Mooli", sans-serif;
+  background-color: #335f95;
+  color: white;
+}
+
 h3 {
   font-family: "Mooli", sans-serif;
+}
+
+p {
+  margin: 1rem;
+}
+
+#primary-color,
+#secondary-color,
+#highlight-color {
+  margin: 1rem auto;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+
+#primary-color {
+  background-color: #335f95;
+  color: white;
+}
+
+#secondary-color {
+  background-color: #5682bc;
+}
+#highlight-color {
+  background-color: #e2a739;
 }
