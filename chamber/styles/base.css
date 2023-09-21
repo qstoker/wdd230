@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Mooli", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #335f95;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem;
+  /* flex: 1 1 100%; */
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.events,
+.weather {
+  border: 1px solid gray;
+}
+.member {
+  border: 1px solid #941a1a;
+}
+
+footer {
+  background-color: #335f95;
+}
+
+.chamber-info {
+  color: #ffffff;
+}
+
+.project-info {
+  color: #ffff00;
+}
