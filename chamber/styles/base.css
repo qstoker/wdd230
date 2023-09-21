@@ -28,22 +28,64 @@ nav {
   margin: 0 auto;
 }
 
-.events,
-.weather {
-  border: 1px solid gray;
+main {
+  display: grid;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.events,
+.weather,
 .member {
-  border: 1px solid #941a1a;
+  padding: 1rem;
+  border: 1px solid #335f95;
+  margin: 0.5rem 0;
+  background-color: #81c3d7;
+}
+
+.member {
+  text-align: center;
+}
+
+.member h3 {
+  text-align: left;
+}
+
+.member p {
+  text-align: right;
 }
 
 footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
   background-color: #335f95;
 }
 
 .chamber-info {
+  grid-column: 1/4;
+  text-align: left;
+  color: #ffffff;
+}
+
+.contact-info {
+  grid-column: 4/5;
   color: #ffffff;
 }
 
 .project-info {
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
   color: #ffff00;
+}
+
+.project-info p {
+  margin: 0.1rem;
 }
