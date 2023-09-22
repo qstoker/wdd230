@@ -18,6 +18,7 @@ a {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: #335f95;
@@ -26,13 +27,70 @@ header {
 header a {
   color: #ffffff;
   padding: 1rem;
+  /* flex-shrink: 5; */
   /* flex: 1 1 100%; */
 }
 
+.title {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  min-width: 323px;
+}
+
+.title span {
+  font-size: 1.81rem;
+}
+
+.social a {
+  display: inline;
+  padding: 0.5rem;
+}
+
+.padding {
+  width: auto;
+  flex-grow: 1;
+  height: 20px;
+  background-color: #000000;
+}
+
 nav {
+  flex-basis: 100%;
+  justify-content: right;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+}
+
+nav a {
+  display: none;
+}
+
+#menu {
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 0.5rem 1.2rem;
+  color: #000000;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+.open a {
+  display: block;
+}
+
+#mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
 }
 
 main {
