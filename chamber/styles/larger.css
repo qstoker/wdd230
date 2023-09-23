@@ -60,4 +60,8 @@
 
   .project-info p {
   }
+
+  .project-info p:nth-child(odd) {
+    border-right: 1px solid #f2c14e;
+  }
 }

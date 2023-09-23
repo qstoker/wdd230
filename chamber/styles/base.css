@@ -284,7 +284,3 @@ footer hr {
 .project-info p {
   margin: 0.1rem;
 }
-
-.project-info p:nth-child(odd) {
-  border-right: 1px solid #f2c14e;
-}
