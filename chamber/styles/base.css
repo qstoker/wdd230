@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  color: #1d293f;
 }
 
 h1,
@@ -31,6 +32,13 @@ header a {
   /* flex: 1 1 100%; */
 }
 
+.header img {
+  width: 100%;
+  height: auto;
+  max-width: 128px;
+  min-width: 64px;
+}
+
 .title {
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -41,8 +49,13 @@ header a {
   font-size: 1.81rem;
 }
 
+.social {
+  display: flex;
+  padding: 1rem;
+  margin-left: auto;
+}
+
 .social a {
-  display: inline;
   padding: 0.5rem;
 }
 
@@ -59,6 +72,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  text-align: center;
 }
 
 nav a {
@@ -66,12 +80,15 @@ nav a {
 }
 
 #menu {
+  margin: 1rem 2rem 1rem auto;
   font-size: 1.5rem;
   text-align: right;
-  padding: 0.5rem 1.2rem;
-  color: #000000;
-  top: 1rem;
-  right: 1rem;
+  width: 30px;
+  height: 30px;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 #menu::before {
@@ -99,9 +116,34 @@ main {
   margin: 0 auto;
 }
 
+.hero,
+.spotlights {
+  margin-bottom: 1rem;
+}
+
 .hero img {
   width: 100%;
   height: auto;
+}
+
+.button {
+  position: relative;
+  translate: -50% -50%;
+  top: -40%;
+  left: 50%;
+  margin-bottom: -2.5rem;
+  max-width: fit-content;
+  text-align: center;
+  font-size: 2rem;
+  text-wrap: nowrap;
+  box-shadow: 0 0 2.5rem 0.5rem #1d293f;
+}
+
+.button a {
+  padding: 1rem;
+  color: #1d293f;
+  background-color: #81c3d7;
+  border-radius: 0.5rem;
 }
 
 .events,
@@ -113,8 +155,53 @@ main {
   background-color: #81c3d7;
 }
 
+.events h3 {
+  margin-bottom: 0;
+}
+
+.events p {
+  margin: 0.5rem 0;
+}
+
+.events a {
+  font-size: 0.9rem;
+}
+
+.weather p {
+  margin: 0 1rem;
+}
+
+.main-weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.main-weather img {
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: right;
+  margin: 0 1rem;
+}
+
+.main-weather p:last-child {
+  font-weight: bold;
+}
+
+.other-weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.other-weather p:nth-child(odd) {
+  justify-self: right;
+}
+
 .member {
   text-align: center;
+  margin: 0.5rem 2rem;
 }
 
 .member h3 {
@@ -133,8 +220,9 @@ footer {
 }
 
 .chamber-info {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 2rem 2rem 0 2rem;
   text-align: left;
@@ -143,14 +231,20 @@ footer {
 }
 
 .chamber-info .logo {
-  grid-column: 1/2;
-  grid-row: 1/3;
   margin: 1rem;
+}
+
+.chamber-info img {
+  width: 100%;
+  height: auto;
+  max-width: 128px;
+  min-width: 64px;
 }
 
 .chamber-info .title {
   margin-top: auto;
   font-size: 1.3rem;
+  line-height: 1.7rem;
   font-family: "Mooli", sans-serif;
   color: #ffffff;
 }
@@ -161,7 +255,7 @@ footer {
 
 .contact-info {
   padding: 1rem;
-  line-height: 1.5rem;
+  /* line-height: 0.5rem; */
 }
 
 .contact-info a {
@@ -174,17 +268,23 @@ hr {
 
 footer hr {
   max-width: 800px;
-  width: 90%;
+  min-width: none;
+  width: 80%;
   border-color: #f2c14e;
 }
 
 .project-info {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
   /* justify-content: space-between; */
   color: #ffff00;
 }
 
 .project-info p {
   margin: 0.1rem;
+}
+
+.project-info p:nth-child(odd) {
+  border-right: 1px solid #f2c14e;
 }
