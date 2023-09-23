@@ -28,8 +28,6 @@ header {
 header a {
   color: #ffffff;
   padding: 1rem;
-  /* flex-shrink: 5; */
-  /* flex: 1 1 100%; */
 }
 
 .header img {
@@ -59,13 +57,6 @@ header a {
   padding: 0.5rem;
 }
 
-.padding {
-  width: auto;
-  flex-grow: 1;
-  height: 20px;
-  background-color: #000000;
-}
-
 nav {
   flex-basis: 100%;
   justify-content: right;
@@ -79,6 +70,16 @@ nav a {
   display: none;
 }
 
+nav .selected {
+  color: #1d293f;
+  background-color: #f2c14e;
+}
+
+nav a:hover {
+  color: #1d293f;
+  background-color: #f2c14e;
+}
+
 #menu {
   margin: 1rem 2rem 1rem auto;
   font-size: 1.5rem;
@@ -89,6 +90,11 @@ nav a {
   text-align: center;
   color: #ffffff;
   border: 1px solid #ffffff;
+}
+
+#menu:hover {
+  color: #f2c14e;
+  border-color: #f2c14e;
 }
 
 #menu::before {
@@ -128,14 +134,14 @@ main {
 
 .button {
   position: relative;
-  translate: -50% -50%;
+  transform: translate(-50%, -50%);
   top: -40%;
   left: 50%;
   margin-bottom: -2.5rem;
   max-width: fit-content;
+  min-width: 284px;
   text-align: center;
   font-size: 2rem;
-  text-wrap: nowrap;
   box-shadow: 0 0 2.5rem 0.5rem #1d293f;
 }
 
@@ -144,6 +150,11 @@ main {
   color: #1d293f;
   background-color: #81c3d7;
   border-radius: 0.5rem;
+}
+
+.button a:hover {
+  color: #1d293f;
+  background-color: #f2c14e;
 }
 
 .events,
@@ -168,13 +179,13 @@ main {
 }
 
 .weather p {
-  margin: 0 1rem;
+  margin: 0 0 0 1rem;
 }
 
 .main-weather {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
 }
 
 .main-weather img {
@@ -197,6 +208,7 @@ main {
 
 .other-weather p:nth-child(odd) {
   justify-self: right;
+  margin: 0 1rem 0 0;
 }
 
 .member {
@@ -255,7 +267,6 @@ footer {
 
 .contact-info {
   padding: 1rem;
-  /* line-height: 0.5rem; */
 }
 
 .contact-info a {
@@ -267,8 +278,7 @@ hr {
 }
 
 footer hr {
-  max-width: 800px;
-  min-width: none;
+  max-width: 850px;
   width: 80%;
   border-color: #f2c14e;
 }
@@ -277,7 +287,6 @@ footer hr {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
-  /* justify-content: space-between; */
   color: #ffff00;
 }
 

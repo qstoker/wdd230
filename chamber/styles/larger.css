@@ -52,16 +52,40 @@
     display: block;
   }
 
+  footer {
+    grid-template-columns: 0.8fr 2fr 2fr 0.8fr;
+    justify-content: center;
+  }
+
+  .chamber-info {
+    grid-column: 2/3;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact-info {
+    align-self: center;
+  }
+
+  footer hr,
+  .project-info {
+    grid-column: 1/5;
+  }
+
   .project-info {
     flex-direction: row;
     justify-content: center;
-    /* max-width: 80%; */
   }
 
   .project-info p {
+    border-right: 1px solid #f2c14e;
+    padding-right: 1rem;
+    margin-right: 1rem;
   }
 
-  .project-info p:nth-child(odd) {
-    border-right: 1px solid #f2c14e;
+  .project-info p:last-child {
+    padding-right: 0;
+    border-right: 0;
+    margin-right: 0.1rem;
   }
 }
