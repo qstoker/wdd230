@@ -13,13 +13,12 @@ main {
 picture {
   max-width: 400px;
   margin: 10px;
-  /* margin-bottom: 200px; */
 }
 
-picture img {
-  width: 100%;
-  height: auto;
-  animation: fade 2s;
+img {
+  /* width: 100%; */
+  /* height: auto; */
+  animation: fade 5s;
 }
 
 @keyframes fade {
