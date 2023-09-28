@@ -233,6 +233,7 @@ main {
   background-color: #f2c14e;
 }
 
+.last-visit,
 .events,
 .weather,
 .demographics,
@@ -307,6 +308,11 @@ main {
   margin: 0.5rem;
 }
 
+.last-visit {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .demographics h3 {
   margin-bottom: 0.5rem;
 }
@@ -315,12 +321,23 @@ main {
   margin-top: 0.5rem;
 }
 
-.gallery picture {
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   max-width: 640px;
 }
 
+.gallery picture {
+  border: 8px solid transparent;
+  margin: 0 4px;
+}
+
 .gallery img {
+  max-width: 616px;
   width: 100%;
   height: auto;
-  margin: 0.5rem 0 0.5rem 0;
+  vertical-align: bottom;
 }

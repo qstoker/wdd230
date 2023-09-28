@@ -36,6 +36,10 @@
   .gallery {
     grid-column: 2 / 4;
   }
+
+  .gallery picture:hover {
+    border-color: #f2c14e;
+  }
 }
 
 @media (min-width: 1000px) {
