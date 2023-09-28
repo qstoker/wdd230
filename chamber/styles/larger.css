@@ -1,4 +1,6 @@
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  /* Previously "min-width: 800px" */
+
   main {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -40,9 +42,9 @@
   .gallery picture:hover {
     border-color: #f2c14e;
   }
-}
 
-@media (min-width: 1000px) {
+  /* Previously "min-width: 1000px" */
+
   header {
     flex-wrap: nowrap;
   }
