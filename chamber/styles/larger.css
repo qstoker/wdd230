@@ -32,6 +32,10 @@
     width: 30%;
     box-shadow: 0 0 1rem #1d293f;
   }
+
+  .gallery {
+    grid-column: 2 / 4;
+  }
 }
 
 @media (min-width: 1000px) {
