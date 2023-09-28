@@ -37,6 +37,14 @@
     <a href="#">Form</a>
   </nav>
   <main>
+    <picture>
+      <source media="(max-width: 500px)" srcset="images/provo-city-center-small.webp" width="400" height="500">
+      <img src="images/provo-city-center-large.webp" alt="Provo city center temple" width="960" height="640">
+    </picture>
+    <div id="overlay">
+      <p>Provo City Center Temple</p>
+    </div>
+
     <h2>WDD 230: Web Frontend Development</h2>
     <section class="card">
       <h3>Learning Activities</h3>
@@ -56,8 +64,12 @@
       <h3>Information</h3>
       <p>Place, Place</p>
       <p>Weather</p>
-      <p>Page Visits : x</p>
+      <p>Page Visits : <span class="visits"></span></p>
     </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60740.56877838322!2d-116.90836515296905!3d47.715887880346344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5361c2648bf35629%3A0x52b4e672f0737da4!2sPost%20Falls%2C%20ID%2083854!5e0!3m2!1sen!2sus!4v1695867603012!5m2!1sen!2sus"
+      width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
   </main>
   <footer>
     <p>&copy; <span id="current-year"></span> - Quinn Stoker - United States</p>
@@ -67,6 +79,7 @@
   <script src="scripts/get-dates.js"></script>
   <script src="scripts/hamburger-menu.js"></script>
   <script src="scripts/dark-mode.js"></script>
+  <script src="scripts/page-visits.js"></script>
 </body>
 
 </html>
