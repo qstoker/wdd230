@@ -39,7 +39,7 @@
     grid-column: 2 / 4;
   }
 
-  .gallery picture:hover {
+  .gallery figure:hover {
     border-color: #f2c14e;
   }
 

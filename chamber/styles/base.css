@@ -330,7 +330,7 @@ main {
   max-width: 640px;
 }
 
-.gallery picture {
+.gallery figure {
   border: 8px solid transparent;
   margin: 0 4px;
 }
@@ -340,4 +340,13 @@ main {
   width: 100%;
   height: auto;
   vertical-align: bottom;
+}
+
+.gallery figcaption {
+  padding: 4px 0;
+  width: auto;
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+  background-color: #335f95;
 }
