@@ -337,8 +337,8 @@ main {
 
 .gallery img {
   max-width: 616px;
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
   vertical-align: bottom;
 }
 
