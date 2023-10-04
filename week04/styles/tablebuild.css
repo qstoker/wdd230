@@ -31,6 +31,10 @@ tr th {
   color: var(--forelight);
 }
 
+tr {
+  font-weight: 700;
+}
+
 tr:first-child th,
 tr:nth-child(2) th:first-child {
   background-color: var(--back);
