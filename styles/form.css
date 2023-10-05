@@ -21,11 +21,14 @@ input {
 }
 
 #rangevalue {
-  /* display: inline; */
+  display: inline;
   font-size: 1.5rem;
 }
 
 #r {
-  /* display: inline; */
   margin-bottom: 0;
+}
+
+span {
+  font-size: 0.8rem;
 }
