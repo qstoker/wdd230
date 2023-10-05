@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #2f6690;
+  --secondary-color: #81c3d7;
+  --accent-color: #f2c14e;
+}
+
 form {
   text-align: left;
   padding: 0 2rem;
@@ -6,7 +12,7 @@ form {
 
 fieldset {
   border-radius: 1rem;
-  border: 2px solid #2f6690;
+  border: 2px solid var(--primary-color);
   margin-bottom: 2rem;
 }
 
@@ -19,6 +25,9 @@ input {
   display: block;
   height: 2.75rem;
   margin-bottom: 1rem;
+  width: 50%;
+  min-width: 150px;
+  max-width: 320px;
 }
 
 #rangevalue {
@@ -42,7 +51,7 @@ span {
 
 .submit-button {
   border: none;
-  background-color: #81c3d7;
+  background-color: var(--secondary-color);
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
   margin: 0 0 2rem 2%;
@@ -51,15 +60,11 @@ span {
 }
 
 .submit-button:hover {
-  background-color: #f2c14e;
+  background-color: var(--accent-color);
 }
 
 input {
   background-color: #ffffff;
-  border: 1px solid #2f6690;
+  border: 1px solid var(--primary-color);
   border-radius: 2px;
-}
-
-input:target {
-  border: 1px solid gray;
 }
