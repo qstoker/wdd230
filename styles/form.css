@@ -1,0 +1,31 @@
+form {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+fieldset {
+  border-radius: 1rem;
+  border: 2px solid #2f6690;
+  margin-bottom: 2rem;
+}
+
+legend {
+  padding: 0 0.5rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+input {
+  display: block;
+  height: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+#rangevalue {
+  /* display: inline; */
+  font-size: 1.5rem;
+}
+
+#r {
+  /* display: inline; */
+  margin-bottom: 0;
+}

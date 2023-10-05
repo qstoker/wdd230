@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="favicon.ico">
 
     <meta property="og:title" content="WDD 230: Web Frontend Development">
@@ -39,35 +38,7 @@
         <a href="#">Form</a>
     </nav>
     <main>
-        <h2>Form</h2>
-        <form action="record.html" method="get">
-            <fieldset>
-                <legend>Required Information</legend>
-
-                <label id="username">Username<input type="text" name="username" required></label>
-                <label>Password<input id="password" type="text" name="password" required></label>
-                <label>Confirm Password<input id="password-confirmation" type="text" name="password-confirmation"
-                        pattern="[A-Za-z0-9]{8,}" required></label>
-                <div id="formmessage"></div>
-                <label id="email">Email<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                        title="Please enter a valid email address" required></label>
-
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Optional Information</legend>
-
-                <label id="range-label" for="r">Page Rating
-                    <div id="rangevalue">0</div>
-                    <input id="r" type="range" name="r" min="0" max="10" value="0" step="1">
-                </label>
-
-            </fieldset>
-
-
-            <input class="submitBtn" type="submit" value="Sign Up">
-        </form>
+        <h2>Your form has been submitted!</h2>
     </main>
     <footer>
         <p>&copy; <span id="current-year"></span> - Quinn Stoker - United States</p>

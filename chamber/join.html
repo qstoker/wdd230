@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coeur d'Alene Chamber of Commerce</title>
+    <meta name="description" content="Coeur d'Alene Chamber of Commerce home page">
+    <meta name="author" content="Quinn Stoker">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Coeur d'Alene Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://qstoker.github.io/wdd230/images/cda-aerial.jpg">
+    <meta property="og:url" content="https://qstoker.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="https://qstoker.github.io/wdd230/chamber"><img src="images/facebook-logo-128.png"
+                alt="Coeur d'Alene Chamber of Commerce logo"></a>
+        <a class="title" href="https://qstoker.github.io/wdd230/chamber">
+            <h1>Coeur d'Alene<br><span>Chamber of Commerce</span></h1>
+        </a>
+
+        <div class="social">
+            <a class="facebook" href="#"><img src="images/facebook-logo-40.png" alt="Facebook logo"></a>
+            <a class="linkedin" href="#"><img src="images/linkedin-logo-40.png" alt="LinkedIn logo"></a>
+        </div>
+
+        <div id="menu"></div>
+        <nav>
+            <a class="selected" href="https://qstoker.github.io/wdd230/chamber">Home</a>
+            <a href="discover">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="join-form">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+
+                    <label id="first-name">First Name*<input type="text" name="fname" required></label>
+                    <label id="last-name">Last Name*<input type="text" name="lname" required></label>
+
+                    <label id="job-title">Title<input type="text" name="organization-title"
+                            pattern="^[A-Za-z\d- ]{7,}$"></label>
+                    <label id="email">Email<input type="email" name="email" placeholder="example@email.com"
+                            required></label>
+                    <label id="phone">Phone* <input type="tel" name="phone" required></label>
+
+                    <label id="">Organization Name<input type="text" name="organization"></label>
+
+                    <div>Membership</div>
+                    <label id=""><input type="radio" name="membership" value="np"> NP Membership</label>
+                    <label id=""><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label id=""><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label id=""><input type="radio" name="membership" value="gold"> Gold Membership</label>
+
+                    <label id="">Organization Description<input type="text" name="description"></label>
+                    <label id="">Timestamp<input type="hidden" name="timestamp"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Applicant Information</legend>
+
+                    <label id=""> <input type="" name="" required></label>
+                    <label id=""> <input type="" name="" required></label>
+                </fieldset>
+
+                <input class="submitBtn" type="submit" value="Join">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="chamber-info">
+            <a class="logo" href="https://qstoker.github.io/wdd230/chamber"><img src="images/facebook-logo-128.png"
+                    alt="Coeur d'Alene Chamber of Commerce logo"></a>
+            <div class="title-and-address">
+                <a class="title" href="https://qstoker.github.io/wdd230/chamber">Coeur d'Alene Chamber of Commerce</a>
+                <p class="address">1000 Road Street<br>Coeur d'Alene, Idaho 83814</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <a class="email" href="#">info@coeurdalenechamber.com</a>
+            <br>
+            <a class="phone" href="#">(000) 000-0000</a>
+            <br>
+            <a class="map" href="#">📍 See on map</a>
+        </div>
+
+        <hr>
+
+        <div class="project-info">
+            <p>&copy; <span id="current-year"></span> Coeur d'Alene Chamber</p>
+            <p>Quinn Stoker</p>
+            <p>WDD 230 Project</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+</body>
+
+</html>
