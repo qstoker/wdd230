@@ -41,6 +41,10 @@ nav a {
   display: none;
 }
 
+nav a:hover {
+  background-color: #f2c14e;
+}
+
 .selected {
   background-color: #f2c14e;
 }
@@ -123,6 +127,10 @@ ul {
 
 #menu.open::before {
   content: "X";
+}
+
+#menu:hover {
+  color: #ffffff;
 }
 
 .open a {
