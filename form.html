@@ -44,7 +44,7 @@
             <fieldset>
                 <legend>Required Information</legend>
 
-                <label id="username">Username<input type="text" name="username" required></label>
+                <label id="username">Username<input type="text" name="username" autocomplete="on" required></label>
 
                 <label>Password <span>(At least 8 characters long using only letters and numbers)</span><input
                         id="password" type="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
@@ -52,7 +52,7 @@
                         required></label>
 
                 <label id="email">Email<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                        title="Please enter a valid email address" required></label>
+                        title="Please enter a valid email address" autocomplete="on" required></label>
             </fieldset>
 
             <fieldset>
