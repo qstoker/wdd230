@@ -1,5 +1,7 @@
 :root {
-  /*  */
+  --primary-color: #2f6690;
+  --secondary-color: #81c3d7;
+  --accent-color: #f2c14e;
 }
 
 body {
@@ -18,7 +20,7 @@ header,
 h3,
 footer {
   padding: 1rem;
-  background-color: #2f6690;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
@@ -34,7 +36,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-color: #81c3d7;
+  background-color: var(--secondary-color);
 }
 
 nav a {
@@ -46,11 +48,11 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #f2c14e;
+  background-color: var(--accent-color);
 }
 
 .selected {
-  background-color: #f2c14e;
+  background-color: var(--accent-color);
 }
 
 main {
@@ -69,7 +71,7 @@ main picture img {
   position: absolute;
   min-width: 216px;
   padding: 1rem;
-  border: 1px solid #2f6690;
+  border: 1px solid var(--primary-color);
   margin: 1rem;
   font-size: 1.2rem;
   color: #000000;
@@ -101,7 +103,7 @@ h2 {
 
 .card a {
   text-decoration: underline;
-  color: #2f6690;
+  color: var(--primary-color);
 }
 
 h3 {
