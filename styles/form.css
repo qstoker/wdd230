@@ -34,6 +34,14 @@ input {
   max-width: 320px;
 }
 
+input:required {
+  border-left: #d33b3b solid 6px;
+}
+
+input:required:valid {
+  border-left: #55a755 solid 6px;
+}
+
 #rangevalue {
   display: inline;
   font-size: 1.5rem;
