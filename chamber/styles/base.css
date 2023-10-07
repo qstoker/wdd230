@@ -397,7 +397,8 @@ label span,
   border-radius: 4px;
 }
 
-input {
+input,
+textarea {
   display: block;
   height: 2.75rem;
   margin-bottom: 1rem;
@@ -408,6 +409,10 @@ input {
   color: #1d293f;
   border: 2px solid #1d293f;
   border-radius: 4px;
+}
+
+textarea {
+  height: 6rem;
 }
 
 .membership {
