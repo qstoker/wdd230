@@ -393,7 +393,7 @@ label span,
   color: #1d293f;
   background-color: #ffffff;
   padding: 5px 5px 5px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid #1d293f;
   border-radius: 4px;
 }
 
