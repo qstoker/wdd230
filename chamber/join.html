@@ -59,13 +59,12 @@
                     <label id="email"><span>Email</span><input type="email" name="email" placeholder="example@email.com"
                             required></label>
                     <label id="phone"><span>Phone</span><input type="tel" name="phone" required></label>
-                    <!-- should type="telephone"? -->
 
                     <label id="job-position"><span>Position in Organization<span class="optional">
-                                (Optional)</span></span><input type="text" name="job-position"
-                            pattern="^[A-Za-z\d- ]{7,}$"></label>
+                                (Optional)</span></span><input type="text" name="job-position" pattern="[A-Za-z\- ]{7,}"
+                            required></label>
 
-                    <label id="timestamp"><input type="hidden" name="timestamp"></label>
+                    <label><input id="timestamp" type="hidden" name="timestamp"></label>
                 </fieldset>
 
                 <fieldset>
@@ -166,6 +165,7 @@
 
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/get-timestamp.js"></script>
 </body>
 
 </html>
