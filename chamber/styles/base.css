@@ -406,7 +406,7 @@ input {
   max-width: 320px;
   background-color: #ffffff;
   color: #1d293f;
-  border: 2px solid var(--primary-color);
+  border: 2px solid #1d293f;
   border-radius: 4px;
 }
 
@@ -470,4 +470,35 @@ input:required:valid {
 
 .benefits-card ul {
   padding-left: 20px;
+}
+
+/* Thank You page styles */
+
+.account-created {
+  grid-column: 1 / 4;
+  margin: 1rem;
+}
+
+.account-created p {
+  margin: 1.5rem 0;
+}
+
+.home-button {
+  min-width: 208px;
+  grid-column: 1 / 4;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.home-button a {
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  color: #1d293f;
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+.home-button a:hover {
+  color: #1d293f;
+  background-color: var(--accent-color);
 }
