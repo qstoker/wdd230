@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
+    <!-- <link rel="stylesheet" href="../styles/form.css"> -->
 
     <meta property="og:title" content="Coeur d'Alene Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -38,15 +39,15 @@
 
         <div id="menu"></div>
         <nav>
-            <a class="selected" href="https://qstoker.github.io/wdd230/chamber">Home</a>
+            <a href="https://qstoker.github.io/wdd230/chamber">Home</a>
             <a href="discover">Discover</a>
             <a href="#">Directory</a>
-            <a href="join">Join</a>
+            <a class="selected" href="join">Join</a>
         </nav>
     </header>
 
     <main>
-        <section class="join-form">
+        <div class="join-form">
             <form action="thankyou.html" method="get">
                 <fieldset>
                     <legend>Applicant Information</legend>
@@ -56,32 +57,43 @@
 
                     <label id="job-title">Title<input type="text" name="organization-title"
                             pattern="^[A-Za-z\d- ]{7,}$"></label>
+                    <!-- Does this pattern work? -->
                     <label id="email">Email<input type="email" name="email" placeholder="example@email.com"
                             required></label>
                     <label id="phone">Phone* <input type="tel" name="phone" required></label>
+                    <!-- should type="telephone"? -->
 
-                    <label id="">Organization Name<input type="text" name="organization"></label>
+                    <label id="organization">Organization Name<input type="text" name="organization" required></label>
 
                     <div>Membership</div>
-                    <label id=""><input type="radio" name="membership" value="np"> NP Membership</label>
-                    <label id=""><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                    <label id=""><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                    <label id=""><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    <label class="membership"><input type="radio" name="membership" value="np"> NP Membership</label>
+                    <label class="membership"><input type="radio" name="membership" value="bronze"> Bronze
+                        Membership</label>
+                    <label class="membership"><input type="radio" name="membership" value="silver"> Silver
+                        Membership</label>
+                    <label class="membership"><input type="radio" name="membership" value="gold"> Gold
+                        Membership</label>
 
-                    <label id="">Organization Description<input type="text" name="description"></label>
-                    <label id="">Timestamp<input type="hidden" name="timestamp"></label>
+                    <label id="description">Organization Description<input type="text" name="description"></label>
+                    <label id="timestamp">Timestamp<input type="hidden" name="timestamp"></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Applicant Information</legend>
 
-                    <label id=""> <input type="" name="" required></label>
-                    <label id=""> <input type="" name="" required></label>
+                    <!--  -->
                 </fieldset>
 
-                <input class="submitBtn" type="submit" value="Join">
+                <input class="submit-button" type="submit" value="Join">
             </form>
-        </section>
+        </div>
+
+        <div class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <p>Gold</p>
+            <p>Gold</p>
+            <p>Gold</p>
+        </div>
     </main>
 
     <footer>
