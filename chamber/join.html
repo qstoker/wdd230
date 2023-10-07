@@ -49,23 +49,31 @@
     <main>
         <div class="join-form">
             <form action="thankyou.html" method="get">
-                <fieldset>
+                <fieldset id="">
                     <legend>Applicant Information</legend>
 
-                    <label id="first-name">First Name*<input type="text" name="fname" required></label>
-                    <label id="last-name">Last Name*<input type="text" name="lname" required></label>
+                    <label id="first-name">First Name<input type="text" name="fname" required></label>
+                    <label id="last-name">Last Name<input type="text" name="lname" required></label>
 
-                    <label id="job-title">Title<input type="text" name="organization-title"
-                            pattern="^[A-Za-z\d- ]{7,}$"></label>
                     <!-- Does this pattern work? -->
                     <label id="email">Email<input type="email" name="email" placeholder="example@email.com"
                             required></label>
-                    <label id="phone">Phone* <input type="tel" name="phone" required></label>
+                    <label id="phone">Phone <input type="tel" name="phone" required></label>
                     <!-- should type="telephone"? -->
 
-                    <label id="organization">Organization Name<input type="text" name="organization" required></label>
+                    <label id="job-position">Position in Organization<input type="text" name="job-position"
+                            pattern="^[A-Za-z\d- ]{7,}$"></label>
 
-                    <div>Membership</div>
+                    <label id="timestamp"><input type="hidden" name="timestamp"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Organization Information</legend>
+
+                    <label id="organization">Organization Name<input type="text" name="organization" required></label>
+                    <label id="description">Organization Description<input type="text" name="description"></label>
+
+                    <div>Membership Tier</div>
                     <label class="membership"><input type="radio" name="membership" value="np"> NP Membership</label>
                     <label class="membership"><input type="radio" name="membership" value="bronze"> Bronze
                         Membership</label>
@@ -73,18 +81,9 @@
                         Membership</label>
                     <label class="membership"><input type="radio" name="membership" value="gold"> Gold
                         Membership</label>
-
-                    <label id="description">Organization Description<input type="text" name="description"></label>
-                    <label id="timestamp">Timestamp<input type="hidden" name="timestamp"></label>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Applicant Information</legend>
-
-                    <!--  -->
-                </fieldset>
-
-                <input class="submit-button" type="submit" value="Join">
+                <input class="submit-button" type="submit" value="Join Us">
             </form>
         </div>
 

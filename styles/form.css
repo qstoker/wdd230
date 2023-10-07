@@ -32,6 +32,9 @@ input {
   width: 50%;
   min-width: 150px;
   max-width: 320px;
+  background-color: #ffffff;
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
 }
 
 input:required {
@@ -77,10 +80,4 @@ span {
 
 .submit-button:hover {
   background-color: var(--accent-color);
-}
-
-input {
-  background-color: #ffffff;
-  border: 1px solid var(--primary-color);
-  border-radius: 2px;
 }

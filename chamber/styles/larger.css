@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #335f95;
+  --secondary-color: #81c3d7;
+  --accent-color: #f2c14e;
+}
+
 @media (min-width: 1000px) {
   /* Previously "min-width: 800px" */
 
@@ -6,7 +12,7 @@
   }
 
   .hero {
-    grid-column: 1/4;
+    grid-column: 1 / 4;
   }
 
   .button {
@@ -15,7 +21,7 @@
   }
 
   .events {
-    grid-column: 1/3;
+    grid-column: 1 / 3;
     margin-right: 0.5rem;
   }
 
@@ -24,7 +30,7 @@
   }
 
   .spotlights {
-    grid-column: 1/4;
+    grid-column: 1 / 4;
     display: flex;
     justify-content: space-between;
   }
@@ -40,7 +46,11 @@
   }
 
   .gallery figure:hover {
-    border-color: #f2c14e;
+    border-color: var(--accent-color);
+  }
+
+  .join-form {
+    grid-column: 1 / 3;
   }
 
   /* Previously "min-width: 1000px" */
@@ -68,7 +78,7 @@
   }
 
   .chamber-info {
-    grid-column: 2/3;
+    grid-column: 2 / 3;
     padding-left: 0;
     padding-right: 0;
   }
@@ -88,7 +98,7 @@
   }
 
   .project-info p {
-    border-right: 1px solid #f2c14e;
+    border-right: 1px solid var(--accent-color);
     padding-right: 1rem;
     margin-right: 1rem;
   }
