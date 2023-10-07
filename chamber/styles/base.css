@@ -243,7 +243,8 @@ main {
 .events,
 .weather,
 .demographics,
-.member {
+.member,
+.benefits-card {
   padding: 1rem;
   border: 1px solid var(--primary-color);
   margin: 0.5rem 0;
@@ -361,22 +362,50 @@ main {
 /* Join page styles */
 
 form {
-  margin: 1rem;
+  margin: 2rem 1rem;
 }
 
 fieldset {
+  border: 1px solid #1d293f;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+legend {
+  padding: 5px;
+  background-color: var(--accent-color);
+  color: #1d293f;
   border: 1px solid var(--primary-color);
-  background-color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+label span,
+.radio-title {
+  font-family: "Mooli", sans-serif;
+  font-style: italic;
+}
+
+.radio-list {
+  width: 94.5%;
+  min-width: 180px;
+  max-width: 314px;
+  color: #1d293f;
+  background-color: #ffffff;
+  padding: 5px 5px 5px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
 }
 
 input {
   display: block;
   height: 2.75rem;
   margin-bottom: 1rem;
-  width: 50%;
-  min-width: 150px;
+  width: 95.8%;
+  min-width: 186px;
   max-width: 320px;
   background-color: #ffffff;
+  color: #1d293f;
   border: 2px solid var(--primary-color);
   border-radius: 4px;
 }
@@ -397,8 +426,48 @@ input {
 
 input:required {
   border-left: #d33b3b solid 6px;
+  width: 95%;
+  min-width: 182px;
+  max-width: 316px;
 }
 
 input:required:valid {
   border-left: #3a823a solid 6px;
+  max-width: 316px;
+}
+
+.optional {
+  font-size: 0.7rem;
+}
+
+.submit-button {
+  border: none;
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0 0 2rem 2px;
+  height: 4rem;
+  width: 98%;
+  min-width: 220px;
+  max-width: 342px;
+  font-size: 2rem;
+  color: #1d293f;
+}
+
+.submit-button:hover {
+  background-color: var(--accent-color);
+}
+
+.sidebar h2 {
+  margin: 1.5rem 0 0 0.5rem;
+}
+
+.benefits-card h3,
+.benefits-card h4,
+.benefits-card ul {
+  margin: 0.6rem 0;
+}
+
+.benefits-card ul {
+  padding-left: 20px;
 }

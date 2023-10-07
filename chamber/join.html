@@ -52,16 +52,17 @@
                 <fieldset id="">
                     <legend>Applicant Information</legend>
 
-                    <label id="first-name">First Name<input type="text" name="fname" required></label>
-                    <label id="last-name">Last Name<input type="text" name="lname" required></label>
+                    <label id="first-name"><span>First Name</span><input type="text" name="fname" required></label>
+                    <label id="last-name"><span>Last Name</span><input type="text" name="lname" required></label>
 
                     <!-- Does this pattern work? -->
-                    <label id="email">Email<input type="email" name="email" placeholder="example@email.com"
+                    <label id="email"><span>Email</span><input type="email" name="email" placeholder="example@email.com"
                             required></label>
-                    <label id="phone">Phone <input type="tel" name="phone" required></label>
+                    <label id="phone"><span>Phone</span><input type="tel" name="phone" required></label>
                     <!-- should type="telephone"? -->
 
-                    <label id="job-position">Position in Organization<input type="text" name="job-position"
+                    <label id="job-position"><span>Position in Organization<span class="optional">
+                                (Optional)</span></span><input type="text" name="job-position"
                             pattern="^[A-Za-z\d- ]{7,}$"></label>
 
                     <label id="timestamp"><input type="hidden" name="timestamp"></label>
@@ -70,28 +71,68 @@
                 <fieldset>
                     <legend>Organization Information</legend>
 
-                    <label id="organization">Organization Name<input type="text" name="organization" required></label>
-                    <label id="description">Organization Description<input type="text" name="description"></label>
+                    <label id="organization"><span>Organization Name</span><input type="text" name="organization"
+                            required></label>
+                    <label id="description"><span>Organization Description<span class="optional">
+                                (Optional)</span></span><input type="text" name="description"></label>
 
-                    <div>Membership Tier</div>
-                    <label class="membership"><input type="radio" name="membership" value="np"> NP Membership</label>
-                    <label class="membership"><input type="radio" name="membership" value="bronze"> Bronze
-                        Membership</label>
-                    <label class="membership"><input type="radio" name="membership" value="silver"> Silver
-                        Membership</label>
-                    <label class="membership"><input type="radio" name="membership" value="gold"> Gold
-                        Membership</label>
+                    <div class="radio-title">Membership Tier<span class="optional"> (Optional)</span></div>
+                    <div class="radio-list">
+                        <label class="membership"><input type="radio" name="membership" value="np"> NP
+                            Membership</label>
+                        <label class="membership"><input type="radio" name="membership" value="bronze"> Bronze
+                            Membership</label>
+                        <label class="membership"><input type="radio" name="membership" value="silver"> Silver
+                            Membership</label>
+                        <label class="membership"><input type="radio" name="membership" value="gold"> Gold
+                            Membership</label>
+                    </div>
                 </fieldset>
 
                 <input class="submit-button" type="submit" value="Join Us">
             </form>
         </div>
 
-        <div class="membership-benefits">
+        <div class="sidebar">
             <h2>Membership Benefits</h2>
-            <p>Gold</p>
-            <p>Gold</p>
-            <p>Gold</p>
+            <div class="benefits-card">
+                <h3>Non Profit Membership (NP)</h3>
+                <h4>Free</h4>
+                <ul>
+                    <li>Completely free for non profit organizations</li>
+                    <li>Basic access to chamber events</li>
+                    <li>Basic access to chamber training</li>
+                </ul>
+            </div>
+            <div class="benefits-card">
+                <h3>Bronze Membership</h3>
+                <h4>$25/month</h4>
+                <ul>
+                    <li>Basic access to chamber events</li>
+                    <li>Premium access to chamber training</li>
+                    <li>Basic access to regional events</li>
+                </ul>
+            </div>
+            <div class="benefits-card">
+                <h3>Silver Membership</h3>
+                <h4>$30/month</h4>
+                <ul>
+                    <li>Premium access to chamber events</li>
+                    <li>Premium access to chamber training</li>
+                    <li>Basic access to regional events</li>
+                    <li>Basic access to advertising</li>
+                </ul>
+            </div>
+            <div class="benefits-card">
+                <h3>Gold Membership</h3>
+                <h4>$40/month</h4>
+                <ul>
+                    <li>Premium access to chamber events</li>
+                    <li>Premium access to chamber training</li>
+                    <li>Premium access to regional events</li>
+                    <li>Premium access to advertising</li>
+                </ul>
+            </div>
         </div>
     </main>
 
