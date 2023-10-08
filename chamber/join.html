@@ -57,21 +57,22 @@
 
                     <!-- Does this pattern work? -->
                     <label id="email"><span>Email</span><input type="email" name="email" placeholder="example@email.com"
+                            autocomplete="on" required></label>
+                    <label id="phone"><span>Phone</span><input type="tel" name="phone" autocomplete="on"
                             required></label>
-                    <label id="phone"><span>Phone</span><input type="tel" name="phone" required></label>
 
                     <label id="job-position"><span>Position in Organization<span class="optional">
                                 (Optional - At least 7 letters, hyphens, and/or spaces)</span></span><input type="text"
                             name="job-position" pattern="[A-Za-z\- ]{7,}"></label>
 
-                    <label><input id="timestamp" type="hidden" name="timestamp"></label>
+                    <div><input id="timestamp" type="hidden" name="timestamp"></div>
                 </fieldset>
 
                 <fieldset>
                     <legend>Organization Information</legend>
 
                     <label id="organization"><span>Organization Name</span><input type="text" name="organization"
-                            required></label>
+                            autocomplete="on" required></label>
                     <label id="description"><span>Organization Description<span class="optional">
                                 (Optional)</span></span><textarea name="description"></textarea></label>
 
