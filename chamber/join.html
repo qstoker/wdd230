@@ -52,18 +52,20 @@
                 <fieldset>
                     <legend>Applicant Information</legend>
 
-                    <label id="first-name"><span>First Name</span><input type="text" name="fname" required></label>
-                    <label id="last-name"><span>Last Name</span><input type="text" name="lname" required></label>
-
-                    <!-- Does this pattern work? -->
-                    <label id="email"><span>Email</span><input type="email" name="email" placeholder="example@email.com"
-                            autocomplete="on" required></label>
-                    <label id="phone"><span>Phone</span><input type="tel" name="phone" autocomplete="on"
+                    <label><span>First Name</span><input id="first-name" type="text" name="fname" autocomplete="on"
+                            required></label>
+                    <label><span>Last Name</span><input id="last-name" type="text" name="lname" autocomplete="on"
                             required></label>
 
-                    <label id="job-position"><span>Position in Organization<span class="optional">
-                                (Optional - At least 7 letters, hyphens, and/or spaces)</span></span><input type="text"
-                            name="job-position" pattern="[A-Za-z\- ]{7,}"></label>
+                    <!-- Does this pattern work? -->
+                    <label><span>Email</span><input id="email" type="email" name="email" placeholder="example@email.com"
+                            autocomplete="on" required></label>
+                    <label><span>Phone</span><input id="phone" type="tel" name="phone" autocomplete="on"
+                            required></label>
+
+                    <label><span>Position in Organization<span class="optional">
+                                (Optional - At least 7 letters, hyphens, and/or spaces)</span></span><input
+                            id="job-position" type="text" name="job-position" pattern="[A-Za-z\- ]{7,}"></label>
 
                     <div><input id="timestamp" type="hidden" name="timestamp"></div>
                 </fieldset>
@@ -71,10 +73,11 @@
                 <fieldset>
                     <legend>Organization Information</legend>
 
-                    <label id="organization"><span>Organization Name</span><input type="text" name="organization"
+                    <label><span>Organization Name</span><input id="organization" type="text" name="organization"
                             autocomplete="on" required></label>
-                    <label id="description"><span>Organization Description<span class="optional">
-                                (Optional)</span></span><textarea name="description"></textarea></label>
+                    <label><span>Organization Description<span class="optional">
+                                (Optional)</span></span><textarea id="description"
+                            name="description"></textarea></label>
 
                     <div class="radio-title">Membership Tier<span class="optional"> (Optional)</span></div>
                     <div class="radio-list">
