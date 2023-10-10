@@ -1,0 +1,36 @@
+html {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+main {
+  box-shadow: 0 0 2rem;
+  background-color: lightgray;
+  padding: 0.5rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+section {
+  border: 1px solid hsl(323, 16%, 46%);
+  background-color: pink;
+  margin: 0.5rem;
+}
+
+h1,
+h2 {
+  margin: 1rem 0;
+  color: #793f66;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  margin: 0.5rem;
+  box-shadow: 0 0 1rem;
+}
