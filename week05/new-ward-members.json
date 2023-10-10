@@ -1,0 +1,28 @@
+{
+  "familyName": "Smith",
+  "moveInDate": "2023-09-31",
+  "numOfRecords": 4,
+  "visitComplete": true,
+  "familyMembers": [
+    {
+      "name": "John",
+      "gender": "male",
+      "birthdate": "1980-01-01"
+    },
+    {
+      "name": "Jane",
+      "gender": "female",
+      "birthdate": "1975-05-05"
+    },
+    {
+      "name": "Sally",
+      "gender": "female",
+      "birthdate": "2005-07-07"
+    },
+    {
+      "name": "Tom",
+      "gender": "male",
+      "birthdate": "2010-02-02"
+    }
+  ]
+}
