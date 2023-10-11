@@ -69,8 +69,14 @@
     </section>
     <section class="card">
       <h3>Information</h3>
-      <p>Place, Place</p>
-      <p>Weather</p>
+      <p id="weather-location"></p>
+      <!-- add sys.country element -->
+      <div class="weather">
+        <img id="weather-icon" src="" alt="">
+        <span id="current-temp"></span>
+        <span>-</span>
+        <span id="weather-description"></span>
+      </div>
       <p>Page Visits : <span class="visits"></span></p>
     </section>
     <iframe
@@ -87,6 +93,7 @@
   <script src="scripts/hamburger-menu.js"></script>
   <script src="scripts/dark-mode.js"></script>
   <script src="scripts/page-visits.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 
 </html>
