@@ -22,14 +22,14 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
   let desc = data.weather[0].description;
   let loc = data.name;
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
   description.textContent = `${desc}`;
-  place.textContent = `${loc}`;
+  place.textContent = `${data.name}, ${data.sys.country}`;
 }
 
 apiFetch();
