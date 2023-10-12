@@ -106,10 +106,22 @@ h2 {
   color: var(--primary-color);
 }
 
+.weeks-list li {
+  margin: 0.5rem;
+}
+
 .weather {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#weather-location {
+  margin-bottom: 0.2rem;
+}
+
+#weather-description {
+  text-align: left;
 }
 
 h3 {
