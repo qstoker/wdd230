@@ -172,3 +172,12 @@ ul {
   text-align: left;
   margin-left: 1rem;
 }
+
+.dark {
+  background: #202124;
+  color: #ffffff;
+}
+
+.dark li a {
+  color: #81c3d7;
+}
