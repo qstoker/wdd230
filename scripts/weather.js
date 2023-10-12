@@ -10,8 +10,6 @@ async function apiFetch() {
     if (response.ok) {
       let data = await response.json();
 
-      console.log(data);
-
       displayResults(data);
     } else {
       throw Error(await response.text());

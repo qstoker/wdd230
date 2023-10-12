@@ -12,7 +12,6 @@ async function getLinks() {
 function displayLinks(weeks) {
   weeks.forEach((week) => {
     let newWeek = document.createElement("li");
-    // let weekName = document.createElement("span");
     newWeek.textContent = `${week.week}`;
 
     week.links.forEach((link) => {
