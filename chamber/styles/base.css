@@ -515,18 +515,83 @@ input:required:valid {
 
 /* Directory page styles */
 
-.directory-cards {
+#layout-button {
+  margin: 1rem 2rem 1rem auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+  width: 30px;
+  height: 30px;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+#layout-button:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+#layout-button::before {
+  content: "☷";
+}
+
+#layout-button.list::before {
+  content: "⊞";
+}
+
+.list div {
+  display: block;
+}
+
+#directory {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.directory-cards div {
+#directory.list {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--primary-color);
+  margin: 1rem;
+}
+
+#directory div {
   text-align: center;
   border: 2px solid var(--primary-color);
   margin: 1rem;
 }
 
-.directory-cards div * {
+#directory.list div {
+  display: grid;
+  border: 0;
+  margin: 0;
+  padding: 0.75rem 0.25rem;
+}
+
+#directory div * {
   display: block;
   margin: 0.5rem auto;
+}
+
+#directory.list div * {
+  margin: 0.1rem 0.5rem;
+  text-align: left;
+}
+
+#directory div p:first-of-type {
+  font-size: 1.5rem;
+}
+
+#directory.list div p:first-of-type {
+  font-size: 1rem;
+}
+
+#directory.list img {
+  display: none;
+}
+
+#directory.list div:nth-child(even) {
+  background-color: #e3f3f8;
 }

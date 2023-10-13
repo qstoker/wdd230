@@ -1,5 +1,5 @@
 const url = "https://qstoker.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector(".directory-cards");
+const directory = document.querySelector("#directory");
 
 async function getMembers(url) {
   const response = await fetch(url);
@@ -11,7 +11,7 @@ async function getMembers(url) {
 
 function displayMembers(members) {
   members.forEach((member) => {
-    let card = document.createElement("div");
+    let item = document.createElement("div");
     let name = document.createElement("p");
     let address = document.createElement("p");
     let phone = document.createElement("p");
@@ -34,14 +34,14 @@ function displayMembers(members) {
     logo.setAttribute("width", "128");
     logo.setAttribute("height", "128");
 
-    card.appendChild(logo);
-    card.appendChild(name);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(url);
-    card.appendChild(tier);
+    item.appendChild(logo);
+    item.appendChild(name);
+    item.appendChild(address);
+    item.appendChild(phone);
+    item.appendChild(url);
+    item.appendChild(tier);
 
-    cards.appendChild(card);
+    directory.appendChild(item);
   });
 }
 

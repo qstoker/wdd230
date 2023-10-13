@@ -113,7 +113,16 @@
     margin-right: 0.1rem;
   }
 
-  .directory-cards {
+  #directory {
     grid-column: 1/4;
+  }
+
+  #directory.list div {
+    grid-template-columns: 1.2fr 2fr 1fr 2fr 1fr;
+    padding: 0.25rem;
+  }
+
+  #directory.list div * {
+    margin: auto 0.5rem;
   }
 }
