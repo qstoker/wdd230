@@ -6,23 +6,25 @@ async function getMembers(url) {
   const data = await response.json();
   //   console.table(data);
 
-  displayMembers(data.prophets);
+  displayMembers(data.members);
 }
 
-const displayMembers = (prophets) => {
-  prophets.forEach((prophet) => {
-    let card = document.createElement("section");
-    let fullName = document.createElement("h2");
-    let birthdate = document.createElement("p");
-    let birthplace = document.createElement("p");
-    let portrait = document.createElement("img");
+const displayMembers = (members) => {
+  members.forEach((member) => {
+    let name = document.createElement("section");
+    let address = document.createElement("h2");
+    let phone = document.createElement("p");
+    let url = document.createElement("p");
+    let image = document.createElement("img");
+    // make this vvv a border color?
+    let tier = document.createElement("img");
 
-    fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-    birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
-    birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
+    fullName.textContent = `${member.name} ${member.lastname}`;
+    birthdate.textContent = `Date of Birth: ${member.birthdate}`;
+    birthplace.textContent = `Place of Birth: ${member.birthplace}`;
 
-    portrait.setAttribute("src", prophet.imageurl);
-    portrait.setAttribute("alt", `${prophet.name} ${prophet.lastname} portrait`);
+    portrait.setAttribute("src", member.imageurl);
+    portrait.setAttribute("alt", `${member.name} ${member.lastname} portrait`);
     portrait.setAttribute("loading", "lazy");
     portrait.setAttribute("width", "340");
     portrait.setAttribute("height", "440");
@@ -36,4 +38,4 @@ const displayMembers = (prophets) => {
   });
 };
 
-getProphetData(url);
+getMembers(url);
