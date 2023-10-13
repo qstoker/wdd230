@@ -20,11 +20,11 @@ function displayMembers(members) {
     // make this vvv a border color?
     let tier = document.createElement("p");
 
-    name.textContent = `${member.name}`;
-    address.textContent = `${member.address}`;
-    phone.textContent = `${member.phone}`;
-    url.textContent = `${member.url}`;
-    tier.textContent = `${member.tier}`;
+    name.textContent = member.name;
+    address.textContent = member.address;
+    phone.textContent = member.phone;
+    url.textContent = member.url;
+    tier.textContent = `${member.tier} Member`;
 
     url.setAttribute("href", member.url);
 
@@ -34,11 +34,11 @@ function displayMembers(members) {
     logo.setAttribute("width", "128");
     logo.setAttribute("height", "128");
 
+    card.appendChild(logo);
     card.appendChild(name);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(url);
-    card.appendChild(logo);
     card.appendChild(tier);
 
     cards.appendChild(card);

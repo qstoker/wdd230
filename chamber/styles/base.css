@@ -515,6 +515,11 @@ input:required:valid {
 
 /* Directory page styles */
 
+.directory-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
 .directory-cards div {
   text-align: center;
   border: 2px solid var(--primary-color);
