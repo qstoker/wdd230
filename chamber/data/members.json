@@ -4,7 +4,7 @@
       "name": "Company One",
       "address": "1111 Street Road, Coeur d'Alene, ID 83814",
       "phone": "111-111-1111",
-      "url": "company1.com",
+      "url": "https://company1.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "NP"
     },
@@ -12,7 +12,7 @@
       "name": "Company Two",
       "address": "2222 Street Road, Coeur d'Alene, ID 83814",
       "phone": "222-222-2222",
-      "url": "company2.com",
+      "url": "https://company2.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Bronze"
     },
@@ -20,7 +20,7 @@
       "name": "Company Three",
       "address": "3333 Street Road, Coeur d'Alene, ID 83814",
       "phone": "333-333-3333",
-      "url": "company3.com",
+      "url": "https://company3.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Silver"
     },
@@ -28,7 +28,7 @@
       "name": "Company Four",
       "address": "4444 Street Road, Coeur d'Alene, ID 83814",
       "phone": "444-444-4444",
-      "url": "company4.com",
+      "url": "https://company4.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Gold"
     },
@@ -36,7 +36,7 @@
       "name": "Company Five",
       "address": "5555 Street Road, Coeur d'Alene, ID 83814",
       "phone": "555-555-5555",
-      "url": "company5.com",
+      "url": "https://company5.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Silver"
     },
@@ -44,7 +44,7 @@
       "name": "Company Six",
       "address": "6666 Street Road, Coeur d'Alene, ID 83814",
       "phone": "666-666-6666",
-      "url": "company6.com",
+      "url": "https://company6.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Bronze"
     },
@@ -52,7 +52,7 @@
       "name": "Company Seven",
       "address": "7777 Street Road, Coeur d'Alene, ID 83814",
       "phone": "777-777-7777",
-      "url": "company7.com",
+      "url": "https://company7.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "NP"
     }

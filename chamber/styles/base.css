@@ -512,3 +512,16 @@ input:required:valid {
   color: #1d293f;
   background-color: var(--accent-color);
 }
+
+/* Directory page styles */
+
+.directory-cards div {
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  margin: 1rem;
+}
+
+.directory-cards div * {
+  display: block;
+  margin: 0.5rem auto;
+}

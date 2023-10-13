@@ -1,5 +1,5 @@
 const url = "https://qstoker.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector("#cards");
+const cards = document.querySelector(".directory-cards");
 
 async function getMembers(url) {
   const response = await fetch(url);
