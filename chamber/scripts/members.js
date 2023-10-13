@@ -11,28 +11,35 @@ async function getMembers(url) {
 
 const displayMembers = (members) => {
   members.forEach((member) => {
-    let name = document.createElement("section");
-    let address = document.createElement("h2");
+    let card = document.createElement("div");
+    let name = document.createElement("p");
+    let address = document.createElement("p");
     let phone = document.createElement("p");
-    let url = document.createElement("p");
-    let image = document.createElement("img");
+    let url = document.createElement("a");
+    let logo = document.createElement("img");
     // make this vvv a border color?
-    let tier = document.createElement("img");
+    let tier = document.createElement("p");
 
-    fullName.textContent = `${member.name} ${member.lastname}`;
-    birthdate.textContent = `Date of Birth: ${member.birthdate}`;
-    birthplace.textContent = `Place of Birth: ${member.birthplace}`;
+    name.textContent = `${member.name}`;
+    address.textContent = `${member.address}`;
+    phone.textContent = `${member.phone}`;
+    url.textContent = `${member.url}`;
+    tier.textContent = `${member.tier}`;
 
-    portrait.setAttribute("src", member.imageurl);
-    portrait.setAttribute("alt", `${member.name} ${member.lastname} portrait`);
-    portrait.setAttribute("loading", "lazy");
-    portrait.setAttribute("width", "340");
-    portrait.setAttribute("height", "440");
+    url.setAttribute("href", member.url);
 
-    card.appendChild(fullName);
-    card.appendChild(birthdate);
-    card.appendChild(birthplace);
-    card.appendChild(portrait);
+    logo.setAttribute("src", member.logo);
+    logo.setAttribute("alt", `${member.name} logo`);
+    logo.setAttribute("loading", "lazy");
+    logo.setAttribute("width", "128");
+    logo.setAttribute("height", "128");
+
+    card.appendChild(name);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(url);
+    card.appendChild(logo);
+    card.appendChild(tier);
 
     cards.appendChild(card);
   });

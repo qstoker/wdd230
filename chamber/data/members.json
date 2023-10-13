@@ -1,11 +1,11 @@
 {
-  "organizations": [
+  "members": [
     {
       "name": "Company One",
       "address": "1111 Street Road, Coeur d'Alene, ID 83814",
       "phone": "111-111-1111",
       "url": "company1.com",
-      "image": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
+      "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "NP"
     },
     {
@@ -13,7 +13,7 @@
       "address": "2222 Street Road, Coeur d'Alene, ID 83814",
       "phone": "2222222222",
       "url": "company2.com",
-      "image": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
+      "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Bronze"
     },
     {
@@ -21,7 +21,7 @@
       "address": "3333 Street Road, Coeur d'Alene, ID 83814",
       "phone": "333-333-3333",
       "url": "company3.com",
-      "image": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
+      "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Silver"
     },
     {
@@ -29,7 +29,7 @@
       "address": "4444 Street Road, Coeur d'Alene, ID 83814",
       "phone": "4444444444",
       "url": "company4.com",
-      "image": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
+      "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Gold"
     },
     {
@@ -37,7 +37,7 @@
       "address": "5555 Street Road, Coeur d'Alene, ID 83814",
       "phone": "555-555-5555",
       "url": "company5.com",
-      "image": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
+      "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Silver"
     },
     {
@@ -45,7 +45,7 @@
       "address": "6666 Street Road, Coeur d'Alene, ID 83814",
       "phone": "6666666666",
       "url": "company6.com",
-      "image": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
+      "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Bronze"
     },
     {
@@ -53,7 +53,7 @@
       "address": "7777 Street Road, Coeur d'Alene, ID 83814",
       "phone": "777-777-7777",
       "url": "company7.com",
-      "image": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
+      "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "NP"
     }
   ]
