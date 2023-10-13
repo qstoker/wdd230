@@ -4,12 +4,12 @@ const cards = document.querySelector("#cards");
 async function getMembers(url) {
   const response = await fetch(url);
   const data = await response.json();
-  //   console.table(data);
+  console.table(data);
 
   displayMembers(data.members);
 }
 
-const displayMembers = (members) => {
+function displayMembers(members) {
   members.forEach((member) => {
     let card = document.createElement("div");
     let name = document.createElement("p");
@@ -43,6 +43,6 @@ const displayMembers = (members) => {
 
     cards.appendChild(card);
   });
-};
+}
 
 getMembers(url);

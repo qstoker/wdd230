@@ -11,7 +11,7 @@
     {
       "name": "Company Two",
       "address": "2222 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "2222222222",
+      "phone": "222-222-2222",
       "url": "company2.com",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Bronze"
@@ -27,7 +27,7 @@
     {
       "name": "Company Four",
       "address": "4444 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "4444444444",
+      "phone": "444-444-4444",
       "url": "company4.com",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Gold"
@@ -43,7 +43,7 @@
     {
       "name": "Company Six",
       "address": "6666 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "6666666666",
+      "phone": "666-666-6666",
       "url": "company6.com",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/facebook-logo-128.png",
       "tier": "Bronze"
