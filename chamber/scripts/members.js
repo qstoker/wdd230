@@ -12,12 +12,11 @@ async function getMembers(url) {
 function displayMembers(members) {
   members.forEach((member) => {
     let item = document.createElement("div");
-    let name = document.createElement("p");
+    let name = document.createElement("h3");
     let address = document.createElement("p");
     let phone = document.createElement("p");
     let url = document.createElement("a");
     let logo = document.createElement("img");
-    // make this vvv a border color?
     let tier = document.createElement("p");
 
     name.textContent = member.name;

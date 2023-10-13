@@ -588,11 +588,12 @@ input:required:valid {
   text-align: left;
 }
 
-#directory div p:first-of-type {
+#directory div h3:first-of-type {
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
-#directory.list div p:first-of-type {
+#directory.list div h3:first-of-type {
   font-size: 1rem;
 }
 
