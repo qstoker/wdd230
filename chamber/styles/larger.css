@@ -112,4 +112,8 @@
     border-right: 0;
     margin-right: 0.1rem;
   }
+
+  .directory-cards {
+    grid-column: 1/4;
+  }
 }

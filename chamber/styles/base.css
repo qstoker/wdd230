@@ -516,6 +516,7 @@ input:required:valid {
 /* Directory page styles */
 
 .directory-cards {
+  /* grid-column: 1/4; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
