@@ -515,17 +515,23 @@ input:required:valid {
 
 /* Directory page styles */
 
+#businesses-title {
+  margin: 1rem 0 0 1rem;
+}
+
 #layout-button {
-  margin: 1rem 2rem 1rem auto;
+  margin: 1rem 1rem 0rem 1rem;
   font-size: 1.5rem;
-  font-weight: 700;
-  text-align: right;
   width: 30px;
   height: 30px;
-  padding: 0.3rem 0.5rem;
+  padding: 7px 7px 5px 7px;
   text-align: center;
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+#layout-button.list {
+  padding: 5px 7px 7px 7px;
 }
 
 #layout-button:hover {
@@ -547,20 +553,22 @@ input:required:valid {
 
 #directory {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  margin: 0.5rem;
 }
 
 #directory.list {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
   margin: 1rem;
 }
 
 #directory div {
   text-align: center;
-  border: 2px solid var(--primary-color);
-  margin: 1rem;
+  border: 3px solid var(--primary-color);
+  padding: 1rem;
+  margin: 0.5rem;
 }
 
 #directory.list div {

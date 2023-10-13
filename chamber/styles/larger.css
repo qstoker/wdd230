@@ -113,13 +113,15 @@
     margin-right: 0.1rem;
   }
 
+  #businesses-title,
+  #layout-button,
   #directory {
     grid-column: 1/4;
   }
 
   #directory.list div {
     grid-template-columns: 1.2fr 2fr 1fr 2fr 1fr;
-    padding: 0.25rem;
+    padding: 0.75rem;
   }
 
   #directory.list div * {
