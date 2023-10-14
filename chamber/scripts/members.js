@@ -4,7 +4,6 @@ const directory = document.querySelector("#directory");
 async function getMembers(url) {
   const response = await fetch(url);
   const data = await response.json();
-  console.table(data);
 
   displayMembers(data.members);
 }
