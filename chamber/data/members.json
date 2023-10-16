@@ -2,57 +2,57 @@
   "members": [
     {
       "name": "Aerial Heights",
-      "address": "1111 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "111-111-1111",
-      "url": "https://company1.com/",
+      "address": "232 E Elm Avenue, Coeur d'Alene, ID 83814",
+      "phone": "208-137-4334",
+      "url": "https://aerialheights.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/aerial-heights.webp",
       "tier": "NP"
     },
     {
       "name": "Alemnitic",
-      "address": "2222 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "222-222-2222",
-      "url": "https://company2.com/",
+      "address": "1160 7th Street, Coeur d'Alene, ID 83814",
+      "phone": "208-702-1226",
+      "url": "https://alemnitic.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/alemnitic.webp",
       "tier": "Bronze"
     },
     {
       "name": "Garden Fresh",
-      "address": "3333 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "333-333-3333",
-      "url": "https://company3.com/",
+      "address": "1300 E Montana Ave, Coeur d'Alene, ID 83814",
+      "phone": "208-589-2825",
+      "url": "https://gardenfresheats.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/garden-fresh.webp",
       "tier": "Silver"
     },
     {
       "name": "Georgo Eatery",
-      "address": "4444 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "444-444-4444",
-      "url": "https://company4.com/",
+      "address": "1612 N 11th Street, Coeur d'Alene, ID 83814",
+      "phone": "208-661-2844",
+      "url": "https://georgo.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/georgo-eatery.webp",
       "tier": "Gold"
     },
     {
       "name": "Gracie's Pies",
-      "address": "5555 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "555-555-5555",
-      "url": "https://company5.com/",
+      "address": "440 W Davidson Avenue, Coeur d'Alene, ID 83814",
+      "phone": "208-537-7106",
+      "url": "https://piesbygracie.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/gracies-pies.webp",
       "tier": "Silver"
     },
     {
       "name": "Knitters for Knitters",
-      "address": "6666 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "666-666-6666",
-      "url": "https://company6.com/",
+      "address": "2438 E Wallace Avenue, Coeur d'Alene, ID 83814",
+      "phone": "208-614-9082",
+      "url": "https://knittershelp.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/knitters-for-knitters.webp",
       "tier": "Bronze"
     },
     {
       "name": "Vincint's Car Care",
-      "address": "7777 Street Road, Coeur d'Alene, ID 83814",
-      "phone": "777-777-7777",
-      "url": "https://company7.com/",
+      "address": "1376 N Melrose Street, Coeur d'Alene, ID 83814",
+      "phone": "208-774-8114",
+      "url": "https://repairsbyvincint.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/vincints-car-care.webp",
       "tier": "NP"
     }
