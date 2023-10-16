@@ -29,8 +29,8 @@ function displayMembers(members) {
     logo.setAttribute("src", member.logo);
     logo.setAttribute("alt", `${member.name} logo`);
     logo.setAttribute("loading", "lazy");
-    logo.setAttribute("width", "1");
-    logo.setAttribute("height", "1");
+    logo.setAttribute("width", "192");
+    logo.setAttribute("height", "192");
 
     item.appendChild(logo);
     item.appendChild(name);

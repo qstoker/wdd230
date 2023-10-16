@@ -579,9 +579,9 @@ input:required:valid {
 }
 
 #directory div img {
-  max-height: 128px;
-  height: auto;
-  width: auto;
+  /* max-height: 128px; */
+  /* height: auto; */
+  /* width: auto; */
 }
 
 #directory div * {
