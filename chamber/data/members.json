@@ -1,7 +1,7 @@
 {
   "members": [
     {
-      "name": "Company One",
+      "name": "Aerial Heights",
       "address": "1111 Street Road, Coeur d'Alene, ID 83814",
       "phone": "111-111-1111",
       "url": "https://company1.com/",
@@ -9,7 +9,7 @@
       "tier": "NP"
     },
     {
-      "name": "Company Two",
+      "name": "Alemnitic",
       "address": "2222 Street Road, Coeur d'Alene, ID 83814",
       "phone": "222-222-2222",
       "url": "https://company2.com/",
@@ -17,7 +17,7 @@
       "tier": "Bronze"
     },
     {
-      "name": "Company Three",
+      "name": "Garden Fresh",
       "address": "3333 Street Road, Coeur d'Alene, ID 83814",
       "phone": "333-333-3333",
       "url": "https://company3.com/",
@@ -25,7 +25,7 @@
       "tier": "Silver"
     },
     {
-      "name": "Company Four",
+      "name": "Georgo Eatery",
       "address": "4444 Street Road, Coeur d'Alene, ID 83814",
       "phone": "444-444-4444",
       "url": "https://company4.com/",
@@ -33,7 +33,7 @@
       "tier": "Gold"
     },
     {
-      "name": "Company Five",
+      "name": "Gracie's Pies",
       "address": "5555 Street Road, Coeur d'Alene, ID 83814",
       "phone": "555-555-5555",
       "url": "https://company5.com/",
@@ -41,7 +41,7 @@
       "tier": "Silver"
     },
     {
-      "name": "Company Six",
+      "name": "Knitters for Knitters",
       "address": "6666 Street Road, Coeur d'Alene, ID 83814",
       "phone": "666-666-6666",
       "url": "https://company6.com/",
@@ -49,7 +49,7 @@
       "tier": "Bronze"
     },
     {
-      "name": "Company Seven",
+      "name": "Vincint's Car Care",
       "address": "7777 Street Road, Coeur d'Alene, ID 83814",
       "phone": "777-777-7777",
       "url": "https://company7.com/",
