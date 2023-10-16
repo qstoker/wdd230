@@ -578,12 +578,6 @@ input:required:valid {
   padding: 0.75rem 0.25rem;
 }
 
-#directory div img {
-  /* max-height: 128px; */
-  /* height: auto; */
-  /* width: auto; */
-}
-
 #directory div * {
   display: block;
   margin: 0.5rem auto;
