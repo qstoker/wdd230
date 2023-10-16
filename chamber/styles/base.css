@@ -597,6 +597,7 @@ input:required:valid {
 #directory div h3:first-of-type {
   font-size: 1.5rem;
   font-weight: 400;
+  margin-top: 1rem;
 }
 
 #directory.list div h3:first-of-type {

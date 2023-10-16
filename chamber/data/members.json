@@ -46,7 +46,7 @@
       "phone": "208-614-9082",
       "url": "https://knittershelp.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/knitters-for-knitters.webp",
-      "tier": "Bronze"
+      "tier": "NP"
     },
     {
       "name": "Vincint's Car Care",
@@ -54,7 +54,7 @@
       "phone": "208-774-8114",
       "url": "https://repairsbyvincint.com/",
       "logo": "https://qstoker.github.io/wdd230/chamber/images/vincints-car-care.webp",
-      "tier": "NP"
+      "tier": "Bronze"
     }
   ]
 }
