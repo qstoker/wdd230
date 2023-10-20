@@ -263,7 +263,7 @@ main {
   font-size: 0.9rem;
 }
 
-.weather p {
+/* .weather p {
   margin: 0 0 0 1rem;
 }
 
@@ -294,7 +294,7 @@ main {
 .other-weather p:nth-child(odd) {
   justify-self: right;
   margin: 0 1rem 0 0;
-}
+} */
 
 .member {
   text-align: center;
