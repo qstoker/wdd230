@@ -177,6 +177,7 @@ footer {
 
 hr {
   border: 1px solid var(--primary-color);
+  width: 100%;
 }
 
 footer hr {
@@ -263,11 +264,41 @@ main {
   font-size: 0.9rem;
 }
 
-/* .weather p {
-  margin: 0 0 0 1rem;
+.weather {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
 }
 
-.main-weather {
+#current-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.weather h3,
+.weather p {
+  text-align: center;
+}
+
+.weather p {
+  /* margin: 0 0 0 1rem; */
+  margin: 0.3rem;
+}
+
+.weather-forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.weather-forecast h3 {
+  grid-column: 1 / 4;
+}
+
+/* .current-weather {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+} */
+
+/* .main-weather {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;

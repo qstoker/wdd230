@@ -61,12 +61,12 @@ function displayCurrentResults(data) {
 function displayFutureResults(data) {
   calculateFutureResults(data);
 
-  dayOneMin.innerHTML = `${forecast[0][0]}&deg;F`;
-  dayOneMax.innerHTML = `${forecast[0][1]}&deg;F`;
-  dayTwoMin.innerHTML = `${forecast[1][0]}&deg;F`;
-  dayTwoMax.innerHTML = `${forecast[1][1]}&deg;F`;
-  dayThreeMin.innerHTML = `${forecast[2][0]}&deg;F`;
-  dayThreeMax.innerHTML = `${forecast[2][1]}&deg;F`;
+  dayOneMax.innerHTML = `High: ${forecast[0][1]}&deg;F`;
+  dayOneMin.innerHTML = `Low: ${forecast[0][0]}&deg;F`;
+  dayTwoMax.innerHTML = `High: ${forecast[1][1]}&deg;F`;
+  dayTwoMin.innerHTML = `Low: ${forecast[1][0]}&deg;F`;
+  dayThreeMax.innerHTML = `High: ${forecast[2][1]}&deg;F`;
+  dayThreeMin.innerHTML = `Low: ${forecast[2][0]}&deg;F`;
 }
 
 function calculateFutureResults(data) {
