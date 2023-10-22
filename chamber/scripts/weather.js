@@ -48,25 +48,26 @@ async function futureApiFetch() {
 function displayCurrentResults(data) {
   const iconSource = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   let desc = data.weather[0].description;
-  let humid = data.main.feels_like;
+  let humid = data.main.humidity;
+  let feel = data.main.feels_like;
 
   currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
   currentIcon.setAttribute("src", iconSource);
   currentIcon.setAttribute("alt", desc);
   description.textContent = desc;
-  humidity.textContent = `Humidity: ${humid}%`;
-  feelsLike.innerHTML = `Feels like: ${Math.round(humid)}&deg;F`;
+  humidity.textContent = `Humidity: ${Math.round(humid)}%`;
+  feelsLike.innerHTML = `Feels like: ${Math.round(feel)}&deg;F`;
 }
 
 function displayFutureResults(data) {
   calculateFutureResults(data);
 
-  dayOneMax.innerHTML = `High: ${forecast[0][1]}&deg;F`;
-  dayOneMin.innerHTML = `Low: ${forecast[0][0]}&deg;F`;
-  dayTwoMax.innerHTML = `High: ${forecast[1][1]}&deg;F`;
-  dayTwoMin.innerHTML = `Low: ${forecast[1][0]}&deg;F`;
-  dayThreeMax.innerHTML = `High: ${forecast[2][1]}&deg;F`;
-  dayThreeMin.innerHTML = `Low: ${forecast[2][0]}&deg;F`;
+  dayOneMax.innerHTML = `High: ${forecast[1][1]}&deg;F`;
+  dayOneMin.innerHTML = `Low: ${forecast[1][0]}&deg;F`;
+  dayTwoMax.innerHTML = `High: ${forecast[2][1]}&deg;F`;
+  dayTwoMin.innerHTML = `Low: ${forecast[2][0]}&deg;F`;
+  dayThreeMax.innerHTML = `High: ${forecast[3][1]}&deg;F`;
+  dayThreeMin.innerHTML = `Low: ${forecast[3][0]}&deg;F`;
 }
 
 function calculateFutureResults(data) {
