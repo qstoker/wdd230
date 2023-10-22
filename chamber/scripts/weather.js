@@ -19,7 +19,7 @@ async function currentApiFetch() {
     let response = await fetch(currentURL);
     if (response.ok) {
       let data = await response.json();
-      console.log(data);
+      // console.log(data);
 
       displayCurrentResults(data);
     } else {
@@ -35,7 +35,7 @@ async function futureApiFetch() {
     let response = await fetch(futureURL);
     if (response.ok) {
       let data = await response.json();
-      console.log(data);
+      // console.log(data);
 
       displayFutureResults(data);
     } else {
@@ -45,6 +45,7 @@ async function futureApiFetch() {
     console.log(error);
   }
 }
+
 function displayCurrentResults(data) {
   const iconSource = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   let desc = data.weather[0].description;
@@ -76,7 +77,7 @@ function calculateFutureResults(data) {
   const currentMill = date.getTime();
 
   data.list.forEach((measurement) => {
-    console.log(Math.floor((measurement.dt / dayLength) * 1000) - Math.floor(currentMill / dayLength));
+    // console.log(Math.floor((measurement.dt / dayLength) * 1000) - Math.floor(currentMill / dayLength));
 
     const dayNumber = Math.floor((measurement.dt / dayLength) * 1000) - Math.floor(currentMill / dayLength);
 
@@ -102,7 +103,7 @@ function calculateFutureResults(data) {
 
     let average = sum / day.length;
 
-    console.log(forecast[dayCounter]);
+    // console.log(forecast[dayCounter]);
 
     forecast[dayCounter].push(Math.round(min));
     forecast[dayCounter].push(Math.round(max));
@@ -114,3 +115,7 @@ function calculateFutureResults(data) {
 
 currentApiFetch();
 futureApiFetch();
+
+// Add weekdays calculation if possible
+// const milliseconds = 1643568000000; // 2022-03-08 00:00:00
+// const dayOfWeek = new Date(milliseconds).getDay(); // 3 (Wednesday)
