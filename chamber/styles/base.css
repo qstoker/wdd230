@@ -171,9 +171,14 @@ footer {
   padding: 1rem;
 }
 
-.contact-info p {
+.contact-info p,
+.contact-info a {
   color: #ffffff;
-  margin: 0.25rem;
+  margin: 0.3rem;
+}
+
+.contact-info a {
+  text-decoration: underline;
 }
 
 hr {
