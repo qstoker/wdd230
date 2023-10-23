@@ -1,14 +1,45 @@
 const url = "https://qstoker.github.io/wdd230/chamber/data/members.json";
 const spotlights = document.querySelector(".spotlights");
+const spotlightList = [];
 
-async function getMembers(url) {
+async function getSpotlights(url) {
   const response = await fetch(url);
   const data = await response.json();
 
-  displayMembers(data.members);
+  pickSpotlights(data.members);
 }
 
-function displayMembers(members) {
+function pickSpotlights(members) {
+  members.forEach((member) => {
+    if (member.tier == "Silver" || member.tier == "Gold") {
+      spotlightList.push(member);
+    }
+  });
+
+  if (spotlightList.length < 3) {
+    // while (spotlightList.length < 3) {
+    //   spotlightList.push(["-", "-", "-", "-", "-", "-"]);
+    // }
+  } else if (spotlightList.length > 3) {
+    while (spotlightList.length > 3) {
+      spotlightList.splice(Math.floor(Math.random() * spotlightList.length), 1);
+    }
+  }
+
+  shuffleList(spotlightList);
+
+  displaySpotlights(spotlightList);
+}
+
+function shuffleList(list) {
+  for (let i = list.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+
+    [list[i], list[j]] = [list[j], list[i]];
+  }
+}
+
+function displaySpotlights(members) {
   members.forEach((member) => {
     if (member.tier == "Silver" || member.tier == "Gold") {
       let item = document.createElement("div");
@@ -47,4 +78,4 @@ function displayMembers(members) {
   });
 }
 
-getMembers(url);
+getSpotlights(url);

@@ -353,11 +353,12 @@ main {
 }
 
 .member h3 {
-  text-align: left;
+  /* text-align: left; */
 }
 
 .member p {
-  text-align: right;
+  /* text-align: right; */
+  margin: 0.75rem 0;
 }
 
 /* Discover page styles */
