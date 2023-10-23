@@ -205,6 +205,40 @@ footer hr {
 
 /* Home page styles */
 
+#banner {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent-color);
+}
+
+#banner.close {
+  display: none;
+}
+
+#banner p {
+  margin: 0.75rem 2rem;
+  font-size: 1.2rem;
+}
+
+#close-banner {
+  margin: 0 1rem 0 auto;
+  font-size: 2rem;
+  text-align: right;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 0.25rem;
+  text-align: center;
+  color: #1d293f;
+}
+
+#close-banner:hover {
+  color: #d33b3b;
+}
+
+#close-banner::before {
+  content: "🞪";
+}
+
 main {
   display: grid;
   max-width: 960px;
@@ -318,40 +352,6 @@ main {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-
-/* .current-weather {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-} */
-
-/* .main-weather {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-}
-
-.main-weather img {
-  grid-row: 1/3;
-  align-self: center;
-  justify-self: right;
-  margin: 0 1rem;
-}
-
-.main-weather p:last-child {
-  font-weight: bold;
-}
-
-.other-weather {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 1rem;
-}
-
-.other-weather p:nth-child(odd) {
-  justify-self: right;
-  margin: 0 1rem 0 0;
-} */
 
 .member {
   text-align: center;
