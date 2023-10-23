@@ -1,3 +1,5 @@
+const currentWeather = document.querySelector(".current-weather");
+const weatherForecast = document.querySelector(".weather-forecast");
 const currentTemp = document.querySelector("#current-temp");
 const currentIcon = document.querySelector("#current-icon");
 const description = document.querySelector("#current-description");
@@ -113,8 +115,13 @@ function calculateFutureResults(data) {
   });
 }
 
-currentApiFetch();
-futureApiFetch();
+if (currentWeather) {
+  currentApiFetch();
+}
+
+if (weatherForecast) {
+  futureApiFetch();
+}
 
 // Add weekdays calculation if possible
 // const milliseconds = 1643568000000; // 2022-03-08 00:00:00
