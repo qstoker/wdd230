@@ -41,9 +41,9 @@
         <div id="menu"></div>
         <nav>
             <a class="selected" href="../chamber/">Home</a>
-            <a href="discover/">Discover</a>
-            <a href="directory/">Directory</a>
-            <a href="join/">Join</a>
+            <a href="discover">Discover</a>
+            <a href="directory">Directory</a>
+            <a href="join">Join</a>
         </nav>
     </header>
 
@@ -51,8 +51,12 @@
 
     <main>
         <div class="hero">
-            <img src="images/cda-aerial.webp" alt="hero">
-            <div class="button"><a href="join/">Join the Chamber</a></div>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/cda-aerial.webp" width="400" height="500">
+                <source media="(min-width: 501px)" srcset="images/cda-aerial.webp" width="960" height="640">
+                <img src="images/cda-aerial.webp" alt="Provo city center temple" width="960" height="480">
+            </picture>
+            <div class="button"><a href="join">Join the Chamber</a></div>
         </div>
 
         <section class="events">
