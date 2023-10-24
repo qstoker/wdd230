@@ -29,8 +29,16 @@
     margin-left: 0.5rem;
   }
 
-  .spotlights {
+  .member-advertising {
     grid-column: 1 / 4;
+  }
+
+  .member-advertising h2 {
+    text-align: left;
+    margin-left: 0.25rem;
+  }
+
+  .spotlights {
     display: flex;
     justify-content: space-between;
   }

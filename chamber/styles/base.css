@@ -246,8 +246,13 @@ main {
 }
 
 .hero,
-.spotlights {
+.member-advertising {
   margin-bottom: 1rem;
+}
+
+.member-advertising h2 {
+  /* margin-left: 2rem; */
+  text-align: center;
 }
 
 .hero img {
