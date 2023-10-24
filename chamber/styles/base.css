@@ -226,7 +226,7 @@ footer hr {
   text-align: right;
   width: 30px;
   height: 30px;
-  padding-bottom: 0.25rem;
+  padding: 0.5rem 0.5rem 0.75rem 0.5rem;
   text-align: center;
   color: #1d293f;
 }
@@ -307,6 +307,7 @@ main {
 
 .events a {
   font-size: 0.9rem;
+  padding: 0.3rem 0;
 }
 
 .weather {
@@ -369,6 +370,7 @@ main {
 
 .member a {
   text-decoration: underline;
+  padding: 0.3rem 0;
   /* color: #5a2eac; */
 }
 
@@ -587,14 +589,14 @@ input:required:valid {
   font-size: 1.5rem;
   width: 30px;
   height: 30px;
-  padding: 7px 7px 5px 7px;
+  padding: 8px 8px 6px 8px;
   text-align: center;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
 }
 
 #layout-button.list {
-  padding: 5px 7px 7px 7px;
+  padding: 6px 8px 8px 8px;
 }
 
 #layout-button:hover {
@@ -649,6 +651,10 @@ input:required:valid {
 #directory.list div * {
   margin: 0.1rem 0.5rem;
   text-align: left;
+}
+
+#directory div a {
+  padding: 0.3rem 0;
 }
 
 #directory div h3:first-of-type {
