@@ -251,7 +251,7 @@ main {
 }
 
 .member-advertising h2 {
-  /* margin-left: 2rem; */
+  margin-top: 1.5rem;
   text-align: center;
 }
 
@@ -293,8 +293,12 @@ main {
 .benefits-card {
   padding: 1rem;
   border: 1px solid var(--primary-color);
-  margin: 0.5rem 0;
+  margin: 1rem;
   background-color: var(--secondary-color);
+}
+
+.events {
+  margin: 0.5rem 1rem;
 }
 
 .events h3 {
@@ -313,6 +317,7 @@ main {
 .weather {
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
+  margin: 0.5rem 1rem;
 }
 
 #current-icon {
@@ -361,7 +366,7 @@ main {
 
 .member {
   text-align: center;
-  margin: 1rem 2rem;
+  margin: 1rem;
 }
 
 .member p {
