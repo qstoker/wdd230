@@ -591,11 +591,11 @@ input:required:valid {
 /* Directory page styles */
 
 #businesses-title {
-  margin: 1.5rem 0 0 1.5rem;
+  margin: 1.5rem 0 0 1rem;
 }
 
 #layout-button {
-  margin: 1rem 1rem 0rem 1.5rem;
+  margin: 1rem 1rem 0rem 1rem;
   font-size: 1.5rem;
   width: 30px;
   height: 30px;
@@ -629,14 +629,14 @@ input:required:valid {
 #directory {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  margin: 0.5rem 1rem 1rem 1rem;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
 }
 
 #directory.list {
   display: flex;
   flex-direction: column;
   border: 3px solid var(--primary-color);
-  margin: 1rem 1.5rem 1.5rem 1.5rem;
+  margin: 1rem 1rem 1.5rem 1rem;
 }
 
 #directory div {
