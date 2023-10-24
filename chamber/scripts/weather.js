@@ -56,7 +56,7 @@ function displayCurrentResults(data) {
 
   currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
   currentIcon.setAttribute("src", iconSource);
-  currentIcon.setAttribute("alt", desc);
+  currentIcon.setAttribute("alt", `${desc} icon`);
   description.textContent = desc;
   humidity.textContent = `Humidity: ${Math.round(humid)}%`;
   feelsLike.innerHTML = `Feels like: ${Math.round(feel)}&deg;F`;
