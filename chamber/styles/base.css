@@ -377,7 +377,7 @@ main {
 /* Discover page styles */
 
 .sidebar div {
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .last-visit {
@@ -398,7 +398,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   max-width: 640px;
 }
 
@@ -530,10 +530,10 @@ input:required:valid {
 }
 
 .sidebar {
-  margin-bottom: 1rem;
+  margin: 1rem 0 0 0;
 }
 
-.sidebar h2 {
+#member-benefits-header {
   margin: 0 0 0 1rem;
   text-align: center;
 }

@@ -59,6 +59,7 @@
 
   .gallery {
     grid-column: 2 / 4;
+    margin-top: 1.5rem;
   }
 
   .gallery figure:hover {
@@ -147,6 +148,10 @@
 
   #directory.list div * {
     margin: auto 0.5rem;
+  }
+
+  .sidebar {
+    margin-bottom: 1rem;
   }
 
   .sidebar h2 {
