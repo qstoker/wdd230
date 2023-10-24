@@ -148,4 +148,9 @@
   #directory.list div * {
     margin: auto 0.5rem;
   }
+
+  .sidebar h2 {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
 }
