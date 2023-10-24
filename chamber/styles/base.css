@@ -410,8 +410,8 @@ main {
 .gallery img {
   max-width: 616px;
   max-height: 462px;
-  /* width: 100%; */
-  /* height: auto; */
+  width: 356;
+  height: 267;
   vertical-align: bottom;
 }
 

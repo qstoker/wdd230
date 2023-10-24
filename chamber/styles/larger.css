@@ -65,6 +65,11 @@
     border-color: var(--accent-color);
   }
 
+  .gallery img {
+    width: 616px;
+    height: 462px;
+  }
+
   .join-form {
     grid-column: 1 / 3;
   }
